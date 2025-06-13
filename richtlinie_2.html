@@ -8,12 +8,24 @@
 </head>
 <body>
     <header class="text-center m-5">
-        <span class="text-lg"><strong>Richtlinie 3.3.3</strong></span>
+        <span class="text-lg"><strong>Richtlinie 3.3.2</strong></span>
     </header>
     <main class="container mt-5">
-        <h1 class="text-center">Dummy-Code zur Richtlinie 3.3.3</h1>
+        <h1 class="text-center">Terminbuchung</h1>
         <form action="" method="post" class="mt-4 d-flex justify-content-center">
             <div class="mb-3 bg-light p-3 rounded row w-50 justify-content-center py-5">
+                
+                <!--Namen eingeben-->
+                <div class="row mb-3">
+                    <div class="mb-3 col">
+                        <label for="name" class="form-label"><strong>Name:</strong></label>
+                    </div>
+                    <div class="mb-3 col-8">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name eingeben" required>
+                    </div>
+                </div>
+
+                <!--Email angeben-->
                 <div class="row mb-3">
                     <div class="mb-3 col">
                         <label for="email" class="form-label"><strong>E-Mail:</strong></label>
@@ -22,22 +34,47 @@
                         <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail eingeben" required>
                     </div>
                 </div>
-                <div class="row mb-3">
+                
+                <!--Telefonnummer angeben-->
+                <div class="row mb-3 border-bottom">
                     <div class="mb-3 col">
-                        <label for="password" class="form-label mt-2"><strong>Passwort:</strong></label>
+                        <label for="phone" class="form-label"><strong>Telefonnummer:</strong></label>
                     </div>
                     <div class="mb-3 col-8">
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Passwort eingeben" required>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Telefonnummer eingeben" required>
                     </div>
                 </div>
+                
+                <!--Termin auswählen-->
                 <div class="row mb-3">
                     <div class="mb-3 col">
-                        <label for="password2" class="form-label mt-2"><strong>Passwort wiederholen:</strong></label>
+                        <label for="date" class="form-label"><strong>Wunschtermin:</strong></label>
                     </div>
                     <div class="mb-3 col-8">
-                        <input type="password" class="form-control" id="password2" name="password2" placeholder="Passwort wiederholen" required>
+                        <input type="date" class="form-control" id="date" name="date" required>
                     </div>
                 </div>
+                <!--Uhrzeit auswählen-->
+                <div class="row mb-3 border-bottom">
+                    <div class="mb-3 col">
+                        <label for="time" class="form-label"><strong>Uhrzeit:</strong></label>
+                    </div>
+                    <div class="mb-3 col-8">
+                        <input type="time" class="form-control" id="time" name="time" required>
+                    </div>
+                </div>
+
+                <!--Zusätzliche Informationen-->
+                <div class="row mb-3">
+                    <div class="mb-3 col">
+                        <label for="info" class="form-label"><strong>Zusätzliche Informationen:</strong></label>
+                    </div>
+                    <div class="mb-3 col-8">
+                        <textarea class="form-control" id="info" name="info" rows="3" placeholder="Geben Sie hier zusätzliche Informationen ein"></textarea>
+                    </div>
+                </div>
+
+                <!--Absenden Button-->
                 <button type="submit" class="btn btn-primary w-25">Absenden</button>                
             </div>
         </form>
