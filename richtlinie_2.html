@@ -13,19 +13,18 @@
     <header class="text-center m-5">
         <span class="text-lg"><strong>Richtlinie 3.3.2</strong></span>
     </header>
-    <main class="container mt-5">
+    <main class="container my-5">
         <h1 class="text-center">Terminbuchung</h1>
-        <form action="" method="post" class="mt-4 d-flex justify-content-center">
+        <form action="" method="post" class="d-flex justify-content-center">
             <div class="mb-3 bg-light p-3 rounded row w-50 justify-content-center py-5">
-
+                <h2 class="text-center m-3">Persönliche Daten</h2>
                 <!--Namen eingeben-->
                 <div class="row mb-3">
                     <div class="mb-3 col">
                         <label for="name" class="form-label"><strong>Name:</strong></label>
                     </div>
                     <div class="mb-3 col-8">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name eingeben"
-                            required>
+                        <input type="text" class="form-control" id="name" name="name" required>
                     </div>
                 </div>
 
@@ -35,8 +34,7 @@
                         <label for="email" class="form-label"><strong>E-Mail:</strong></label>
                     </div>
                     <div class="mb-3 col-8">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail eingeben"
-                            required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                 </div>
 
@@ -46,38 +44,39 @@
                         <label for="phone" class="form-label"><strong>Telefonnummer:</strong></label>
                     </div>
                     <div class="mb-3 col-8">
-                        <input type="tel" class="form-control" id="phone" name="phone"
-                            placeholder="Telefonnummer eingeben" required>
+                        <input type="tel" class="form-control" id="phone" name="phone"required>
                     </div>
                 </div>
-
-                <!--Termin auswählen-->
-                <div class="row mb-3">
-                    <div class="mb-3 col">
-                        <label for="date" class="form-label"><strong>Wunschtermin:</strong></label>
-                    </div>
-                    <div class="mb-3 col-8">
-                        <input type="date" class="form-control" id="date" name="date" required>
-                    </div>
-                </div>
-                <!--Uhrzeit auswählen-->
+                
+                <h2 class="text-center m-3">Termin</h2>
+                
                 <div class="row mb-3 border-bottom">
-                    <div class="mb-3 col">
-                        <label for="time" class="form-label"><strong>Uhrzeit:</strong></label>
+                    <!--Termin auswählen-->
+                    <div class="mb-3">
+                        <!--beschrifte diese Eingabe-->
+
                     </div>
-                    <div class="mb-3 col-8">
+                    <div class="mb-3 col">
+                        <input type="date" class="form-select" id="date" name="date" required>
+                    </div>
+
+                <!--Uhrzeit auswählen-->
+                    <div class="mb-3">
+                        <!--beschrifte diese Eingabe-->
+                    </div>
+                    <div class="mb-3 col">
                         <input type="time" class="form-control" id="time" name="time" required>
                     </div>
                 </div>
 
+                <h2 class="text-center m-3">Möchten sie uns nochetwas sagen?</h2>
                 <!--Zusätzliche Informationen-->
                 <div class="row mb-3">
                     <div class="mb-3 col">
                         <label for="info" class="form-label"><strong>Zusätzliche Informationen:</strong></label>
                     </div>
                     <div class="mb-3 col-8">
-                        <textarea class="form-control" id="info" name="info" rows="3"
-                            placeholder="Geben Sie hier zusätzliche Informationen ein"></textarea>
+                        <textarea class="form-control" id="info" name="info" rows="3"></textarea>
                     </div>
                 </div>
 
