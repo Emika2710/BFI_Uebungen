@@ -52,19 +52,9 @@
                         <label for="postalcode" class="form-label"><strong>Postleitzahl:</strong></label>
                     </div>
                     <div class="mb-3 col-8">
-                        <input type="text" class="form-control" id="postalcode" name="postalcode" placeholder="12345" list="postalcode-list" required>
+                        <input type="text" class="form-control" id="postalcode" name="postalcode" placeholder="12345" required>
                         <!--datalist-->
-                        <datalist id="postalcode-list">
-                            <option value="10115">10115 Berlin</option>
-                            <option value="20095">20095 Hamburg</option>
-                            <option value="80331">80331 München</option>
-                            <option value="50667">50667 Köln</option>
-                            <option value="70173">70173 Stuttgart</option>
-                            <option value="90402">90402 Nürnberg</option>
-                            <option value="04109">04109 Leipzig</option>
-                            <option value="01067">01067 Dresden</option>
-                            <option value="28195">28195 Bremen</option>
-                        </datalist>
+
                     </div>
                 </div>
                 <!-- Straße und Hausnummer, 2 Felder -->
@@ -73,22 +63,9 @@
                         <label for="street" class="form-label"><strong>Straße und Hausnummer:</strong></label>
                     </div>
                     <div class="mb-3 col-6">
-                        <input type="text" class="form-control" id="street" name="street" placeholder="Musterstraße" list="street-list" required>
+                        <input type="text" class="form-control" id="street" name="street" placeholder="Musterstraße" required>
                         <!--datalist-->
-                        <datalist id="street-list">
-                            <option value="Musterstraße">Musterstraße</option>
-                            <option value="Beispielweg">Beispielweg</option>
-                            <option value="Testallee">Testallee</option>
-                            <option value="Demoplatz">Demoplatz</option>
-                            <option value="Fiktivstraße">Fiktivstraße</option>
-                            <option value="Beispielfeld">Beispielfeld</option>
-                            <option value="Probenweg">Probenweg</option>
-                            <option value="Simulationsstraße">Simulationsstraße</option>
-                            <option value="Modellstraße">Modellstraße</option>
-                            <option value="Übungsweg">Übungsweg</option>
-                            <option value="Teststraße">Teststraße</option>
-                            <option value="Demoallee">Demoallee</option>
-                        </datalist>
+                        
                     </div>
                     <div class="mb-3 col-2">
                         <input type="text" class="form-control" id="housenumber" name="housenumber" placeholder="10" required>
@@ -103,23 +80,9 @@
                         <label for="date" class="form-label"><strong>Wunschtermin:</strong></label>
                     </div>
                     <div class="mb-3 col-8">
-                        <input type="text" class="form-select" id="date" name="date" placeholder="Bitte geben sie einen Termin an" list="date-list" required>
+                        <input type="text" class="form-select" id="date" name="date" placeholder="Bitte geben sie einen Termin an" required>
                         <!--datalist-->
-                        <datalist id="date-list">
-                            <option value="2023-10-01">01.10.2023</option>
-                            <option value="2023-10-02">02.10.2023</option>
-                            <option value="2023-10-03">03.10.2023</option>
-                            <option value="2023-10-04">04.10.2023</option>
-                            <option value="2023-10-05">05.10.2023</option>
-                            <option value="2023-10-06">06.10.2023</option>
-                            <option value="2023-10-07">07.10.2023</option>
-                            <option value="2023-10-08">08.10.2023</option>
-                            <option value="2023-10-09">09.10.2023</option>
-                            <option value="2023-10-10">10.10.2023</option>
-                            <option value="2023-10-11">11.10.2023</option>
-                            <option value="2023-10-12">12.10.2023</option>
-                            <option value="2023-10-13">13.10.2023</option>
-                        </datalist>
+
                     </div>
                 </div>
                 <!--Uhrzeit auswählen-->
@@ -128,16 +91,7 @@
                         <label for="time" class="form-label"><strong>Uhrzeit:</strong></label>
                     </div>
                     <div class="mb-3 col-8">
-                        <!--selcet list-->
-                        <select class="form-select" id="time" name="time" required>
-                            <option value="" disabled selected>Bitte Uhrzeit auswählen</option>
-                            <option value="09:00">09:00</option>
-                            <option value="12:00">12:00</option>
-                            <option value="13:00">13:00</option>
-                            <option value="16:00">16:00</option>
-                            <option value="17:00">17:00</option>
-                            <option value="19:00">19:00</option>
-                        </select>
+                        <input type="time" class="form-control" id="time" name="time" placeholder="Bitte geben sie eine Uhrzeit an" required>
                     </div>
                 </div>
 
